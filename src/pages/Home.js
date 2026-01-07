@@ -93,7 +93,7 @@ function Home() {
           <div className="image-wrapper">
             <div className="red-frame"></div>
             <img 
-              src="/profile.jpg" 
+              src={`${process.env.PUBLIC_URL}/profile.jpeg`}
               alt="Vimalraj - React Developer" 
               className="profile-image"
               onError={(e) => {
