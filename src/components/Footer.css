@@ -1,0 +1,22 @@
+.footer {
+  background: #111;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.footer p:last-child {
+  color: #3b82f6;
+  font-weight: 600;
+}
