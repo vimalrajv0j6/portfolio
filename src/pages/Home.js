@@ -93,7 +93,7 @@ function Home() {
           <div className="image-wrapper">
             <div className="red-frame"></div>
             <img 
-              src="/profile.jpeg" 
+              src="/profile.jpg" 
               alt="Vimalraj - React Developer" 
               className="profile-image"
               onError={(e) => {
