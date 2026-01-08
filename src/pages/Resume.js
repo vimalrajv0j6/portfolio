@@ -1,13 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resume.css";
 
 function Resume() {
-  const handleDownloadCV = () => {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Vimalraj_Resume.pdf";
-    link.click();
-  };
 
   const education = [
     {
@@ -61,7 +55,7 @@ function Resume() {
     { id: "design", label: "Design", icon: "✨" },
   ];
 
-  const [activeCategory, setActiveCategory] = React.useState("all");
+  const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills =
     activeCategory === "all"
@@ -71,6 +65,7 @@ function Resume() {
   return (
     <section className="resume" id="resume">
       <div className="container">
+
         {/* Header */}
         <div className="section-header">
           <h2 className="section-subtitle">My Journey</h2>
@@ -84,6 +79,7 @@ function Resume() {
 
         {/* Resume Content */}
         <div className="resume-content">
+
           {/* Education */}
           <div className="resume-column">
             <div className="column-header">
@@ -117,7 +113,7 @@ function Resume() {
             </div>
           </div>
 
-          {/* Experience (ICONS ONLY) */}
+          {/* Experience - Icons Only */}
           <div className="resume-column">
             <div className="column-header">
               <div className="column-icon">💼</div>
@@ -179,12 +175,17 @@ function Resume() {
           </div>
         </div>
 
-        {/* Actions */}
+        {/* ✅ Resume Download (GitHub Pages Safe) */}
         <div className="resume-actions">
-          <button download className="btn-primary" onClick={handleDownloadCV}>
+          <a
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            download="Vimalraj_Resume.pdf"
+            className="btn-primary"
+          >
             📄 Download Resume
-          </button>
+          </a>
         </div>
+
       </div>
     </section>
   );
