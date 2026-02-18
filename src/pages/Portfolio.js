@@ -59,7 +59,19 @@ function Portfolio() {
       liveLink: "https://vimalrajvj.neocities.org/Currency%20changer/",
       githubLink: "#",
       featured: true
-    }
+    },
+    {
+  id: 6,
+  title: "Tic Tac Toe Game",
+  category: "web",
+  description: "Interactive Tic Tac Toe game built with React featuring dynamic player switching, win detection logic, draw handling, and clean state management.",
+  image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=800&auto=format&fit=crop&q=80",
+  technologies: ["React", "JavaScript", "State Management", "Conditional Rendering"],
+  liveLink: "https://tic-tac-toe-react-six-chi.vercel.app",
+  githubLink: "https://github.com/vimalrajv0j6/tic-tac-toe-react",
+  featured: true
+}
+
   ];
 
   const filters = [
