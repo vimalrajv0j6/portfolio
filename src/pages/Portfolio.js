@@ -70,8 +70,18 @@ function Portfolio() {
   liveLink: "https://tic-tac-toe-react-six-chi.vercel.app",
   githubLink: "https://github.com/vimalrajv0j6/tic-tac-toe-react",
   featured: true
+},
+{
+  id: 7,
+  title: "IronForge Gym",
+  category: "web",
+  description: "A modern gym website featuring class schedules, trainer profiles, and a membership booking system with interactive animations.",
+  image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&auto=format&fit=crop&q=80",
+  technologies: ["React", "CSS", "Frontend Development", "UI/UX"],
+  liveLink: "https://vimalrajv0j6.github.io/ironforge-gym/#/",
+  githubLink: "https://github.com/vimalrajv0j6/ironforge-gym",
+  featured: true
 }
-
   ];
 
   const filters = [
@@ -180,7 +190,7 @@ function Portfolio() {
           <div className="stat-card">
             <div className="stat-icon">🚀</div>
             <div className="stat-content">
-              <div className="stat-number">5</div>
+              <div className="stat-number">7</div>
               <div className="stat-label">Projects Completed</div>
             </div>
           </div>
