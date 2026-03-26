@@ -313,6 +313,10 @@ body {
 
 /* Responsive */
 @media (max-width: 1024px) {
+  body {
+    zoom: 1;
+  }
+  
   .section-title {
     font-size: 48px;
   }
